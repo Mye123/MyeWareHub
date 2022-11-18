@@ -1,5 +1,6 @@
 local games = {
     [{9834528893}] = "https://raw.githubusercontent.com/Mye123/MyeWareHub/main/%2B1%20jump%20every%20second",
+    [{6839171747}] = "https://raw.githubusercontent.com/Mye123/MyeWareHub/main/Doors",
 }
 
 for ids, url in next, games do
