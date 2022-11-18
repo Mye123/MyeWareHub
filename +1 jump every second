@@ -1,0 +1,74 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+	Name = "MyeWare Hub",
+	LoadingTitle = "+1 jump every second",
+	LoadingSubtitle = "by Mye",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "Big Hub"
+	},
+        Discord = {
+        	Enabled = true,
+        	Invite = "vjjcYyCpAg", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "MyeWare Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord for key , (you have been invited)",
+		FileName = "KeySave",
+		SaveKey = true,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "yes."
+	}
+})
+local Tab = Window:CreateTab("Main", 4483362458)
+local SpawnSection = Tab:CreateSection("Spawn")
+local Button = Tab:CreateButton({
+	Name = "Rainbow tower (small) (1 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1.80389, 7850.14, 8010)-- The function that takes place when the button is pressed
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Rainbow tower (big) (2 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-229.905, 8660.61, 7870.37)-- The function that takes place when the button is pressed
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "VIP (4 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-230.848, 7808.15, 7965.12)-- The function that takes place when the button is pressed
+	end,
+})
+local CandySection = Tab:CreateSection("CandyLand")
+local Button = Tab:CreateButton({
+	Name = "Candy tower (2 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2668.44, 12271.1, 8010.68)-- The function that takes place when the button is pressed
+	end,
+})
+local LavaSection = Tab:CreateSection("Lava Land")
+local Button = Tab:CreateButton({
+	Name = "Lava tower (4 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5417.22, 15812.1, 8030.87)-- The function that takes place when the button is pressed
+	end,
+})
+local MoonSection = Tab:CreateSection("Moon Land")
+local Button = Tab:CreateButton({
+	Name = "Moon Mountain (6 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8937.74, 21877.1, 8056.51)
+	end,
+})
+local MoonSection = Tab:CreateSection("Beach Land")
+local Button = Tab:CreateButton({
+	Name = "Beach Tower (6 win)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(16381.7, 27674.7, 8056.09)
+	end,
+})
