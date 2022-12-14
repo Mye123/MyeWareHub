@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("BetterCubeDropper", "DarkTheme")
+local Tab     = Window:NewTab("Main")
+local Section = Tab:NewSection("Dropping")
+Section:NewTextBox("Drop Money read info", "Will be auto rounded ,type 5M to drop all", function(txt)
+    local b           = 0
+    local moneytodrop = txt
+    while b < (moneytodrop / 250) do 
+            game:GetService("ReplicatedStorage").Events.CashDropEvent:FireServer()
+ b = b + 1
+end
+end)
